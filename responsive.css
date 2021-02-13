@@ -1,0 +1,158 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .experience {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+    
+    .top-wrapper h1 {
+      font-size: 32px;
+    }
+    
+    .heading h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Untuk Smartphone */
+  @media all and (max-width: 760px) {
+    .break-mobile::before{
+      content: "\A";
+      white-space: pre;
+    }
+    .experience {
+      width: 100%;
+    }
+    
+    footer {
+      text-align: center;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+    
+    .facebook {
+      margin-bottom: 10px;
+    }
+    
+    .top-wrapper {
+      text-align: left;
+    }
+    
+    .portfolio-content{
+      margin-top: 10px;
+      display: flex;
+    /* Tetapkan flex-wrap */
+    /* flex-direction:column; */
+    flex-wrap: wrap;
+
+    }
+    .portfolio-item{
+      flex: auto;
+      /* Tetapkan width ke 50% */
+      width:50%;
+      /* width: 100%; */
+    }
+    .content{
+      clear: both;
+      margin-bottom:200px;
+    }
+    .content-left{
+      float: none;
+      width:100%;
+    }
+    .content-right{
+      float:none;
+      width:100%;
+    }
+    .content-preview{
+      margin:0px;
+      padding:5px;
+    }
+    .content-desc{
+      margin:0px;
+      padding:5px;
+      width:100%;
+    }
+    
+    .content-preview img{
+      display: block;
+      width: 80%;
+      margin: auto;
+    }
+    /* Tambahkan CSS untuk header-right */
+    .header-right{
+      display:block;
+    }
+    .menu-desktop{
+      display: none;
+    }
+    .menu-mobile{
+      position: absolute;
+      background:#fff !important;
+      z-index:9;
+      top:65px;
+      right:0px;
+      /* max-height:400px; */
+      overflow-y: auto;
+      overflow-x: hidden !important;
+      border-bottom: 3px solid #f9cd26;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+    .cv{
+      border: 1px solid #fff;
+    }
+    
+    .menu-mobile .link{
+      display: block;
+      width: 100%;
+      margin: 0px;
+      
+    }
+    .menu-mobile .startup{
+      display: block;
+      width: 100%;
+      border-radius: 0px;
+      margin: 0px;
+      line-height: 65px;
+    padding: 0 25px;
+    }
+    .menu-mobile .lang{
+      display: block;
+      width: 100%;
+      margin: 0px;
+      background:#281056;
+      color:white;
+      line-height: 65px;
+      padding: 0 25px;
+    }
+    /* Tambahkan CSS untuk menu-icon */
+    .menu-icon{
+     display:block; 
+    }
+    .mobile-only{
+      display: inline-block;
+    }
+    .find-maps{
+      float: none;
+      width:100%;
+    }
+    .find-contact{
+      float: none;
+      width:100%;
+    }
+    
+    .top-wrapper h1 {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: justify;
+    }
+    
+    .top-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    
+  }

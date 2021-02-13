@@ -1,174 +1,451 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irwan Sahrul Sidik</title>
-
-    <link rel="canonical" href="https://getbootstrap.comhttps://getbootstrap.com/docs/4.5/examples/pricing/">
-
-    <!-- Bootstrap core CSS -->
-<link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="https://getbootstrap.com/docs/4.5/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="loading.gif">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/0ab1c08c79.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
-    <div class="container">
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4  bg-white">
-            <h1 class="my-0 mr-md-auto font-weight-normal">Selamat Datang.</h1>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="#">Tentang</a>
-                <a class="p-2 text-dark" href="#">Kontak</a>
-            </nav>
-            <a class="btn btn-outline-warning" href="#">Startup</a>
-            </div>
+    <div class="loading">
+      <img src="loading.gif" alt="Processing">
+      Hi. Welcome to <br>https://irwansahrulsidik.com
     </div>
-
-    <div class="place">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
-                    <h4 class="display-5">Halo, saya Irwan Sahrul Sidik</h5>
-                    <p class="lead text-dark">Saya seorang fullstack web & mobile developer, tinggal di Jakarta, Indonesia.</p>
-
-                    <p class="lead  text-dark">ini adalah halaman pribadi saya, kamu bisa melihat informasi tentang saya dan apa yang saya kerjakan. </p>
-                    </div>
-                
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 mt-4">
-                <img src="hello.svg" width="100%">
-            </div>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="./logo.png">
         </div>
-    </div>
-    </div>
-    <div class="place-2">
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-left">
-        <h2 class="display-4">Tentang saya</h2>
-    </div>
+        <!-- Tambahkan ikon menu disini -->
+        <button class="menu-icon"><i class="fas fa-th"></i></button>
 
+        <div class="header-right">
+          <div class="menu-desktop">
+            <a href="#home" class="link" lang="home">{home}</a>
+            <a href="#exp" class="link" lang="exp">{exp}</a>
+            <a href="#portfolio" class="link" lang="portfolio">{portfolio}</a>
+            <a href="#find" class="link" lang="find">{find}</a>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                <img src="programmming.svg" width="100%" height="350">
+            <a href="#startup" class="startup">Startup</a>
+            <button class="lang" data-lang='id'><img src="id.png"> <span class="mobile-only">Bahasa</span></button>
+            <button class="lang" data-lang="en"><img src="en.png"> <span class="mobile-only">English</span></button>
+          </div>
+          <div class="menu-mobile">
+            <a href="#home" class="link" lang="home">{home}</a>
+            <a href="#exp" class="link" lang="exp">{exp}</a>
+            <a href="#portfolio" class="link" lang="portfolio">{portfolio}</a>
+            <a href="#find" class="link" lang="find">{find}</a>
+
+            <a href="#startup" class="startup">Startup</a>
+            <button class="lang" data-lang='id'><img src="id.png"> <span class="mobile-only">Bahasa</span></button>
+            <button class="lang" data-lang="en"><img src="en.png"> <span class="mobile-only">English</span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+     <div class="top-wrapper wave-area" id="home">
+      <div class="container">
+        <h1 lang="greet">{greet}</h1>
+        <p lang="intro">{intro}</p>
+      </div>
+      <div class="btn-wrapper">
+        <a href="https://flowcv.me/irwansahrulsidik" class="btn cv" target="_blank"><i class="far fa-id-card"></i> <span lang="cv">{cv}</span></a>
+        <a href="https://github.com/irwansah" class="btn github" target="_blank"><i class="fab fa-github"></i> Github</a>
+        <a href="https://www.linkedin.com/in/irwan-sahrul-sidik-b879a1196/?originalSubdomain=id" class="btn linkedin" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+      </div>
+    </div>
+    <div class="experience-wrapper" id="exp">
+      <div class="container">
+        <div class="heading">
+          <h2 lang="xp_intro">{xp_intro}</h2>
+          <p></p>
+        </div>
+        <div class="experiences">
+          <div class="experience">
+            <div class="experience-icon">
+              <img src="mvt.webp">
+              <p>Medcom Visitama</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
-                    <h1 class="display-4"></h1>
-                    <p class="lead">Saya bekerja dibidang pengembangan sistem informasi, mempunyai pengalaman 3 - 4 tahun sebagai pengembang aplikasi khususnya web dan mobile . <br><br> Sekarang saya bekerja di perusahaan konsultan dan bekerja untuk beberapa klien, seperti Telkomsel dan Telkom Sigma.</p>
+            <p class="text-contents" lang="xp_mvt">{xp_mvt}</p>
+          </div>
+          <div class="experience">
+            <div class="experience-icon">
+              <img src="./telkomsel.webp">
+               <p>Telkomsel & TelkomSigma</p>
+            </div>
+             <p class="text-contents" lang="xp_tsel">{xp_tsel}</p>
+          </div>
+          <div class="experience">
+            <div class="experience-icon">
+              <img src="./ajv.webp">
+              <p>Aliansi Jurnalis Video</p>
+            </div>
+            <p class="text-contents" lang="xp_ajv">{xp_ajv}</p>
+          </div>
+          <div class="experience">
+            <div class="experience-icon">
+              <img src="usakti.webp">
+              <p>IKA-Usakti</p>
+            </div>
+            <p class="text-contents" lang="xp_usakti">{xp_usakti}</p>
+          </div>
+
+          
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-wrapper" id="portfolio">
+      <div class="container">
+        <div class="heading">
+          <h2 lang="portfolio"></h2>
+        </div>
+        <div class="portfolio-filter">
+          <a class="btn btn-filter active" data-filter="all" lang="portfolio_all">{portfolio_all}</a>
+          <a class="btn btn-filter" data-filter="olshop" lang="portfolio_os">{portfolio_os}</a>
+          <a class="btn btn-filter" data-filter="sosial" lang="portfolio_sm">{portfolio_sm}</a>
+          <a class="btn btn-filter" data-filter="apps" lang="portfolio_app">{portfolio_app}</a>
+          <a class="btn btn-filter" data-filter="erp" lang="portfolio_erp">{portfolio_erp}</a>
+        </div>
+        <div class="portfolio-content">
+
+          <div class="portfolio-item filter apps">
+            <img src="./portfolio/irwspace.png" class="item-image">
+            <div class="item-label"><span lang="portfolio_app">{portfolio_app}</span></div>
+            <div class="item-component">
+              <p class="item-title">irwspace</p>
+              <button class="item-button link-item" data-url="https://irwspace.xyz"><i class="fas fa-link"></i></button>
+              <button class="item-button control-item" data-src="./portfolio/irwspace.png"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+
+          <div class="portfolio-item filter olshop">
+            <img src="./portfolio/gwt.webp" class="item-image">
+            <div class="item-label"><span lang="portfolio_os">{portfolio_os}</span></div>
+            <div class="item-component">
+              <p class="item-title">Goodwellthrift.id</p>
+              <!-- <button class="item-button link-item" data-url=""><i class="fas fa-link"></i></button> -->
+              <button class="item-button control-item" data-src="./portfolio/gwt.webp"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+
+          <div class="portfolio-item filter sosial">
+              <img src="./portfolio/cms.webp" class="item-image">
+              <div class="item-label"><span lang="portfolio_sm">{portfolio_sm}</span></div>
+              <div class="item-component">
+                <p class="item-title">ISM CMS</p>
+                <!-- <button class="item-button link-item" data-url=""><i class="fas fa-link"></i></button> -->
+                <button class="item-button control-item" data-src="./portfolio/cms.webp"><i class="fas fa-eye"></i></button>
+              </div>
+            </div>
+
+          <div class="portfolio-item filter apps">
+            <img src="./portfolio/sipus.webp" class="item-image">
+            <div class="item-label"><span lang="portfolio_app">{portfolio_app}</span></div>
+            <div class="item-component">
+              <p class="item-title">SIPUS</p>
+              <!-- <button class="item-button link-item"><i class="fas fa-link"></i></button> -->
+              <button class="item-button control-item" data-src="./portfolio/sipus.webp"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+
+          <div class="portfolio-item filter erp">
+            <img src="./portfolio/okr.webp" class="item-image">
+            <div class="item-label"><span lang="portfolio_erp">{portfolio_erp}</span></div>
+            <div class="item-component">
+              <p class="item-title">OKR</p>
+              <!-- <button class="item-button link-item"><i class="fas fa-link"></i></button> -->
+              <button class="item-button control-item" data-src="./portfolio/okr.webp"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="portfolio-item filter erp">
+            <img src="./portfolio/hc.webp" class="item-image">
+            <div class="item-label"><span lang="portfolio_erp">{portfolio_erp}</span></div>
+            <div class="item-component">
+              <p class="item-title">HC PORTAL</p>
+              <!-- <button class="item-button link-item"><i class="fas fa-link"></i></button> -->
+              <button class="item-button control-item" data-src="./portfolio/hc.webp"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="portfolio-item filter apps">
+            <img src="./portfolio/mbs.png" class="item-image">
+            <div class="item-label"><span lang="portfolio_app">{portfolio_app}</span></div>
+            <div class="item-component">
+              <p class="item-title">MBS Usakti</p>
+              <button class="item-button link-item" data-url="https://ikausakti.com"><i class="fas fa-link"></i></button>
+              <button class="item-button control-item" data-src="./portfolio/mbs.png"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+
+          <div class="portfolio-item filter app">
+            <img src="./portfolio/ajv.png" class="item-image">
+            <div class="item-label"><span lang="portfolio_app">{portfolio_app}</span></div>
+            <div class="item-component">
+              <p class="item-title">Aliansi Jurnalis Video</p>
+              <button class="item-button link-item" data-url="https://ajve.org"><i class="fas fa-link"></i></button>
+              <button class="item-button control-item" data-src="./portfolio/ajv.png"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          
+
+        </div>
+
+        <div class="btn-wrapper" style="text-align: center;">
+          <a href="https://irwansah.github.io/portfolio" class="btn cv" target="_blank" lang="portfolio_more"></a>
+        </div>
+      </div>
+    </div>
+    <div class="startup-wrapper" id="startup">
+      <div class="container">
+        <div class="heading">
+          <h2 lang="content_title">{content_title}</h2>
+        </div>
+
+        <div class="content">
+          <div class="content-right">
+            <div class="content-preview">
+              <img src="./irwspace.webp">
+            </div>
+          </div>
+          <div class="content-left">
+              <div class="content-desc">
+                <h3>Irwspace.xyz</h3>
+              <p lang="content_1">{content_1}</p>
+              <div class="btn-wrapper" style="text-align: center;">
+                <a href="https://irwspace.xyz" class="btn launch" target="_blank" lang="launch">{launch}</a>
+              </div>
+              </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="content">
+          <div class="content-left">
+            <div class="content-preview custom_splash_1">
+              <img src="./inovsid.png">
+            </div>
+          </div>
+          <div class="content-right">
+              <div class="content-desc">
+                <h3>Inovs.id</h3>
+                <p lang="content_2">{content_2}</p>
+                <div class="btn-wrapper" style="text-align: center;">
+                  <a href="https://wa.me/6285814429029?text=Hi%2C%20Inovs.id" class="btn launch_wa" target="_blank" lang="launch_wa">{launch_wa}</a>
                 </div>
-                
+              </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        
+        <div class="content">
+          <div class="content-right">
+            <div class="content-preview custom_splash_2">
+              <img src="./chat.webp" style="width:200px;margin:auto;">
             </div>
+          </div>
+          <div class="content-left">
+              <div class="content-desc">
+                <h3>CSTalk</h3>
+                <p lang="content_3">{content_3}</p>
+                <div class="btn-wrapper" style="text-align: center;">
+                  <a href="https://wa.me/6285814429029?text=Hi%2C%20I%20am%20interested%20in%20CStalk" class="btn launch_wa" target="_blank" lang="launch_wa">{launch_wa}</a>
+                </div>
+              </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="find-wrapper" id="find">
+      <div class="container">
+        <div class="heading">
+          <h2 lang="find">Find</h2>
+        </div>
+        <div class="find-maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.846896499328!2d107.04733792672883!3d-7.249553220218981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e686fa73f0fbb27%3A0x7fcd261ef7d11f04!2sirwansahrulsidik.com!5e0!3m2!1sid!2sid!4v1613212725118!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="find-contact">
+            <p class="address" style="word-wrap: break-word;"><i class="fas fa-map-marker-alt"></i> Jl. Siliwangi, Sukaraja, Kadupandak, Kabupaten Cianjur, Jawa Barat 43268</p>
+            <p class="address"> <i class="fas fa-map-marker-alt"></i>
+              Blok B4, Jl. Roket Blok B 2 No.23, RT.002/RW.004, Aren Jaya, Kec. Bekasi Tim., Kota Bks, Jawa Barat 17111 ,  <b>inovs.id</b>
+            </p>
+            <p class="info">
+              <span class="heading">Information</span> <br>
+              <a target="_blank" href="https://wa.me/6285814429029?text=Hi.%20Irwan%20Sahrul%20Sidik" class="link"><i class="fab fa-whatsapp"></i> +62 85814429029</a>
+              <a target="_blank" href="mailto:info@irwansahrulsidik.com" class="link"><i class="far fa-envelope"></i> info@irwansahrulsidik.com</a>
+
+            </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img src="logo.png">
+        <p><span lang="footer_text">{footer_text}</span> <span style="color:rgb(230, 48, 78)"><i class="fas fa-heart"></i></span></p>
+      </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="ImageModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="display-image">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+
+    <script src="lang.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        $(document).on('click','.lang',function(){
+            let lang=$(this).data('lang');
+            sessionStorage.setItem("lang", lang);
+            setLang(lang);
+        });
+        $(document).on('click','.control-item',function(){
+            let src=$(this).data('src');
+            console.log(src);
+            $('#display-image').attr('src',src);
+            $('.modal').show();
+        });
+
+        $(document).on('click','.link-item',function(){
+            let url=$(this).data('url');
+            window.open(url, '_blank');
+        });
+
+        $(document).on('click','.close',function(){
+            $('.modal').fadeOut();
+        });
+
+        $(document).on('click','.modal',function(){
+            if(!$(event.target).closest("#display-image").length){
+              $('.modal').fadeOut();
+          }
+        });
+
+        $(document).on('click','.menu-icon',function(){
+          $('.menu-mobile').slideToggle();
+        });
+
+        $( window ).resize(function() {
+          $('.menu-mobile').hide();
+        });
+        function setLang(lang_default){
+
+          if(lang_default==null){
+            lang_default=sessionStorage.getItem("lang");
+            if(lang_default==null || lang_default=="undefined"){
+              lang_default="id";
+            }            
+          }
+          let getLang=eval("lang_"+lang_default);
+          $("[lang=home]").html(getLang.home);
+          $("[lang=portfolio]").html(getLang.portfolio);
+          $("[lang=exp]").html(getLang.exp);
+          $("[lang=greet]").html(getLang.greet);
+          $("[lang=intro]").html(getLang.intro);
+          $("[lang=cv]").html(getLang.cv);
+          $("[lang=xp_intro]").html(getLang.xp_intro);
+          $("[lang=xp_mvt]").html(getLang.xp_mvt);
+          $("[lang=xp_tsel]").html(getLang.xp_tsel);
+          $("[lang=xp_ajv]").html(getLang.xp_ajv);
+          $("[lang=xp_usakti]").html(getLang.xp_usakti);
+          $("[lang=portfolio]").html(getLang.portfolio);
+          $("[lang=portfolio_all]").html(getLang.portfolio_all);
+          $("[lang=portfolio_os]").html(getLang.portfolio_os);
+          $("[lang=portfolio_sm]").html(getLang.portfolio_sm);
+          $("[lang=portfolio_app]").html(getLang.portfolio_app);
+          $("[lang=portfolio_erp]").html(getLang.portfolio_erp);
+          $("[lang=portfolio_more]").html(getLang.portfolio_more);
+          $("[lang=footer_text]").html(getLang.footer_text);
+          $("[lang=launch]").html(getLang.launch);
+          $("[lang=launch_wa]").html(getLang.launch_wa);
+          $("[lang=content_title]").html(getLang.content_title);
+          $("[lang=content_1]").html(getLang.content_1);
+          $("[lang=content_2]").html(getLang.content_2);
+          $("[lang=content_3]").html(getLang.content_3);
+          $("[lang=find]").html(getLang.find);
+
+          setTimeout(() => {
+            $('.loading').hide();
+          }, 2000);
+        }
+        
+        if(sessionStorage.getItem("lang")==null){
+          sessionStorage.setItem("lang",'id')
+        }
+        
+        if (typeof(Storage) !== "undefined") {
+          setLang();
+        }else{
+          setLang('id');
+        }
+
+
+        $(".btn-filter").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            $('.filter').fadeIn('slow');
+        }
+        else
+        {
+
+            $(".filter").not('.'+value).fadeOut('slow');
+            $('.filter').filter('.'+value).fadeIn('slow');
             
-        </div>
-    </div>
-    
-    
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h4 class="text-center mb-3">Apa yang saya kerjakan?</h4>
-                    <p class="text-left"><b>HCIS / HCPORTAL </b><br> aplikasi terintegrasi guna mendukung implementasi Human Capital Management System (HCMS)</p>
-                    <p class="text-left"><b>INTERNAL SOSIAL MEDIA </b><br> aplikasi media sosial milik perusahaan dan digunakan dalam lingkup internal.</p>
-                    <p class="text-left"><b>OKR (Object Key Results)</b><br> aplikasi pendukung metode pengukuran manajemen kerja.</p>
-                    <p class="text-left"><b>ONLINE VOTING</b><br> aplikasi pemilihan suatu jabatan/pemenang berbasis digital.</p>
-    
-                    <a class="btn btn-warning mb-5">LEBIH BANYAK</a>
-                    
-    
-                </div>            
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h4 class="text-center mb-5">Apa yang saya pakai?</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item active">WEB</li>
-                        <li class="list-group-item text-dark">PHP - Yii2 - Codeigniter - LARAVEL</li>
-                        <li class="list-group-item text-dark">MySQL - Oracle - Mongodb</li>
-                        <li class="list-group-item text-dark">Bootstrap - Materialize - Bulma</li>
-                        <li class="list-group-item text-dark">NodeJS - Jquery - Reactjs</li>
-                        <li class="list-group-item text-dark">Sass</li>
-                        <li class="list-group-item active">MOBILE</li>
-                        <li class="list-group-item text-dark">React Native</li>
-                    </ul>
-    
-                    
-                </div>
-                
-            </div>
-        </div>
-    
-    </div>
-<div class="container">
-  
+        }
+        $(".btn-filter").removeClass("active");
+        $(this).addClass("active");
+        
 
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <h3>Irwan Sahrul Sidik</h3>
-        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</div>
-</body>
+    });
+    
+
+    $(document).on("click", function(event){
+        if(!$(event.target).closest(".menu-mobile").length && !$(event.target).closest(".menu-icon").length){
+            $(".menu-mobile").slideUp();
+        }
+    });
+    // $(".lang").on('click', function(event){
+    //   $(".menu-mobile").slideUp();
+    // });
+
+        $("a").on('click', function(event){
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+                $(".menu-mobile").slideUp();
+
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                history.replaceState([],"",window.location.href.split('#')[0]);
+
+              });
+            } 
+          });
+
+
+
+      });
+
+    </script>
+  </body>
 </html>
