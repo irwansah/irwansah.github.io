@@ -59,6 +59,29 @@
          stop-opacity="0.1"
          id="stop6" />
     </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath890-5">
+      <g
+         inkscape:label="Clip"
+         id="use892-2"
+         style="fill:#26114c;fill-opacity:1">
+        <path
+           id="path986"
+           style="fill:#26114c;fill-opacity:1;stroke-width:0.423678"
+           d="m 131.87538,186.28963 32.60199,9.65341 v 0 l -14.08088,7.10409 -6.54075,15.08322 z"
+           sodipodi:nodetypes="cccccc" />
+        <rect
+           style="fill:#26114c;fill-opacity:1;stroke-width:0.369486"
+           id="rect988"
+           width="33.144886"
+           height="7.0456805"
+           x="241.89392"
+           y="43.075092"
+           ry="0"
+           transform="matrix(0.7309715,0.682408,-0.64932316,0.76051261,0,0)" />
+      </g>
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -95,6 +118,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.389931;opacity:0.05217391"
+       id="rect1482-3"
+       width="197.52588"
+       height="57.247555"
+       x="-0.2223202"
+       y="209.98158"
+       inkscape:export-filename="D:\Xampp\htdocs\irwansah.github.io\blog.png"
+       inkscape:export-xdpi="122"
+       inkscape:export-ydpi="122" />
+    <rect
+       style="fill:#f9cd26;fill-opacity:1;stroke-width:0.269252"
+       id="rect978"
+       width="46.869049"
+       height="28.0151"
+       x="167.20311"
+       y="220.12775"
+       transform="rotate(4.605291)" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.323891"
        id="rect1482"
@@ -305,5 +346,119 @@
            transform="matrix(0.7309715,0.682408,-0.64932316,0.76051261,0,0)" />
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:47.4662px;line-height:1.25;font-family:sans-serif;fill:#26114c;fill-opacity:1;stroke:none;stroke-width:0.247219"
+       x="25.199596"
+       y="270.07928"
+       id="text3549-7"
+       transform="scale(1.0958725,0.91251491)"
+       inkscape:export-filename="C:\Users\irwansah\OneDrive\Desktop\Portfolio\text3549.png"
+       inkscape:export-xdpi="122"
+       inkscape:export-ydpi="122"><tspan
+         sodipodi:role="line"
+         id="tspan3547-7"
+         x="25.199596"
+         y="270.07928"
+         style="font-size:47.4662px;fill:#26114c;fill-opacity:1;stroke-width:0.247219">COM</tspan></text>
+    <rect
+       style="fill:#26114c;fill-opacity:1;stroke:none;stroke-width:0.262617;stroke-opacity:1"
+       id="rect3509-3"
+       width="136.51878"
+       height="20.890522"
+       x="7.0415444"
+       y="236.40886" />
+    <rect
+       style="fill:#26114c;fill-opacity:1;stroke-width:0.0935901"
+       id="rect1480-5-4"
+       width="88.635406"
+       height="17.137026"
+       x="50.173447"
+       y="236.40886" />
+    <rect
+       style="fill:#800080;fill-opacity:1;stroke-width:0.103021"
+       id="rect1480-3"
+       width="57.452366"
+       height="17.184731"
+       x="40.535057"
+       y="236.48607"
+       ry="0" />
+    <rect
+       style="fill:#f9cd26;fill-opacity:1;stroke-width:0.0956734"
+       id="rect1480-7-5"
+       width="43.131908"
+       height="17.137026"
+       x="7.0415444"
+       y="236.40886"
+       ry="0" />
+    <g
+       id="g921-3"
+       transform="matrix(0.26458333,0,0,0.26458333,-66.672626,-13.897244)"
+       inkscape:export-filename="C:\Users\irwansah\OneDrive\Desktop\Portfolio\logo.png"
+       inkscape:export-xdpi="122"
+       inkscape:export-ydpi="122">
+      <text
+         xml:space="preserve"
+         style="font-size:53.3333px;line-height:1.25;fill:#26114c;fill-opacity:1"
+         x="283.45386"
+         y="996.62671"
+         id="text2622-8"><tspan
+           sodipodi:role="line"
+           id="tspan2620-0"
+           x="283.45386"
+           y="996.62671"
+           style="font-size:53.3333px;fill:#ffffff;fill-opacity:1">irwan sahrul sidik</tspan></text>
+    </g>
+    <rect
+       style="fill:#26114c;fill-opacity:1;stroke:none;stroke-width:0.271322;stroke-opacity:1"
+       id="rect3551-8"
+       width="20.032738"
+       height="3.7797618"
+       x="7.2731576"
+       y="231.21902" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:22.5778px;line-height:1.25;font-family:sans-serif;fill:#26114c;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="143.63095"
+       y="255.51189"
+       id="text938"
+       inkscape:transform-center-x="-59.342262"
+       inkscape:transform-center-y="37.797619"><tspan
+         sodipodi:role="line"
+         id="tspan936"
+         x="143.63095"
+         y="255.51189"
+         style="font-size:22.5778px;fill:#26114c;fill-opacity:1;stroke-width:0.264583">Blog</tspan></text>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.358003"
+       id="rect2984"
+       width="64.633926"
+       height="55.184521"
+       x="239.25893"
+       y="162.15178"
+       inkscape:export-filename="D:\Xampp\htdocs\irwansah.github.io\blog-icon.png"
+       inkscape:export-xdpi="122"
+       inkscape:export-ydpi="122" />
+    <rect
+       style="fill:#f9cd26;fill-opacity:1;stroke-width:0.269252"
+       id="rect978-7"
+       width="46.869049"
+       height="28.0151"
+       x="263.04709"
+       y="152.13708"
+       transform="rotate(4.605291)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:22.5778px;line-height:1.25;font-family:sans-serif;fill:#26114c;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="244.62454"
+       y="195.43614"
+       id="text938-1"
+       inkscape:transform-center-x="-59.342262"
+       inkscape:transform-center-y="37.797619"><tspan
+         sodipodi:role="line"
+         id="tspan936-6"
+         x="244.62454"
+         y="195.43614"
+         style="font-size:22.5778px;fill:#26114c;fill-opacity:1;stroke-width:0.264583">Blog</tspan></text>
   </g>
 </svg>
