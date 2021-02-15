@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="loading.gif">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/0ab1c08c79.js" crossorigin="anonymous"></script>
     <script src="jquery.min.js"></script>
     
@@ -127,6 +128,7 @@
           <a class="btn btn-filter" data-filter="sosial" lang="portfolio_sm">{portfolio_sm}</a>
           <a class="btn btn-filter" data-filter="apps" lang="portfolio_app">{portfolio_app}</a>
           <a class="btn btn-filter" data-filter="erp" lang="portfolio_erp">{portfolio_erp}</a>
+          <div class="clear"></div>
         </div>
         <div class="portfolio-content">
 
@@ -214,7 +216,7 @@
         </div>
 
         <div class="btn-wrapper" style="text-align: center;">
-          <a href="https://irwansah.github.io/portfolio" class="btn cv" target="about:blank" lang="portfolio_more"></a>
+          <a href="https://irwansahrulsidik.com/portfolio" class="btn cv" target="about:blank" lang="portfolio_more"></a>
         </div>
       </div>
     </div>
@@ -327,15 +329,41 @@
     <a href="https://wa.me/6285814429029?text=Hi%2C%20irwan%20sahrul%20sidik" target="about:blank">
     <img src="./whatsapp.svg" class="wabutton" alt="Whatsapp-Button" />
     </a>
+    <a href="https://wa.me/6285814429029?text=Hi%2C%20irwan%20sahrul%20sidik" target="about:blank">
+      <div class="hiwa animate__delay-5s" lang="hiwa">{hiwa}</div>
+    </a>
+  
+    
     <a href="#home">
       <img src="./up-arrow.svg" class="upbutton" alt="Up-Button" />
       </a>
       
-
-
     <script src="lang.js"></script>
     <script>
       $(document).ready(function(){
+
+        const animateCSS = (element, animation, prefix = 'animate__') =>
+        // We create a Promise and return it
+        new Promise((resolve, reject) => {
+          const animationName = `${prefix}${animation}`;
+          const node = document.querySelector(element);
+
+          node.classList.add(`${prefix}animated`, animationName);
+
+          // When the animation ends, we clean the classes and resolve the Promise
+          function handleAnimationEnd(event) {
+            event.stopPropagation();
+            node.classList.remove(`${prefix}animated`, animationName);
+            resolve('Animation ended');
+          }
+
+          node.addEventListener('animationend', handleAnimationEnd, {once: true});
+        });
+
+        function playSound(url) {
+          const audio = new Audio(url);
+          audio.play();
+        }
 
         window.onscroll = function() {scrollFunction()};
 
@@ -347,6 +375,7 @@
                 $(".upbutton").fadeOut();
             }
         }
+        
         
         $(document).on('click','.lang',function(){
             let lang=$(this).data('lang');
@@ -377,6 +406,7 @@
 
         $(document).on('click','.menu-icon',function(){
           $('.menu-mobile').slideToggle();
+
         });
 
         $( window ).resize(function() {
@@ -416,11 +446,26 @@
           $("[lang=content_1]").html(getLang.content_1);
           $("[lang=content_2]").html(getLang.content_2);
           $("[lang=content_3]").html(getLang.content_3);
+          
           $("[lang=find]").html(getLang.find);
+          $("[lang=hiwa]").html(getLang.hiwa);
+
 
           setTimeout(() => {
             $('.loading').hide();
+            animateCSS('.hiwa', 'bounceInLeft').then((message) => {
+              setTimeout(() => {
+                    animateCSS('.hiwa', 'bounceOutLeft').then((message) => {
+                      $('.hiwa').hide();
+                    });
+                  }, 4000);
+
+                  playSound('./junt.mp3');
+
+           });
           }, 2000);
+
+          
         }
         
         if(sessionStorage.getItem("lang")==null){

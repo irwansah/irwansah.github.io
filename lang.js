@@ -28,6 +28,7 @@ const lang_id= {
     Membantu individu atau bisnis membuat aplikasi atau situs mereka sendiri.`,
     'content_3':`Layanan Obrolan Langsung untuk website dan aplikasi kamu. <br> Pendukung Customer, Bot Obrolan & Integrasi API.`,
     'find':`Temukan`,
+    'hiwa':`Hai, ada yang bisa saya bantu?`,
 };
 
 
@@ -58,5 +59,5 @@ const lang_en={
     'content_2':`Website and Application Development Services.<br> Helping individuals or businesses create their own app or site.`,
     'content_3':`Live Chat Service for your website and application. <br> Customer Support, Chat Bot & API Integration.`,
     'find':`Find`,
-
+    'hiwa':`Hi, how can I help you?`,
 };
