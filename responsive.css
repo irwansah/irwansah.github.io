@@ -40,7 +40,7 @@
       font-size:8pt;
       flex:content;
       position: relative;
-      /* align-self: flex-start */
+      align-self: flex-start
     }
      
     
@@ -152,10 +152,6 @@
     .find-contact{
       float: none;
       width:100%;
-    }
-    .top-wrapper{
-      background-attachment: scroll;
-
     }
     
     .top-wrapper h1 {
