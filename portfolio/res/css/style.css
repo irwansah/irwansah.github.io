@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+body{
+  font-family: "Poppins";    background: #fafafa;
+}
+*{
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.header{
+    padding:20px;
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    background: white;
+    z-index:9;
+    /* border-bottom:1px solid #dbdbdb; */
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.header .nav-header{
+    position: relative;
+    width:72%;
+    margin:auto;
+}
+.header .nav-header .nav-cell{
+    display: inline-block;
+    
+}
+.brand-icon{
+    position: relative;
+    top:5px;
+}
+.brand-name {
+    position: relative;
+    /* font-weight: bold; */
+    
+}
+
+.cell-left{
+    position:absolute;
+    top:-5px;
+    right:0px;
+}
+.l5{
+    margin-right:40px;
+}
+.l10{
+    margin-right:80px;
+}
+
+.project{
+    position: relative;
+    display: block;
+    width:960px;
+    margin:auto;
+    margin-top:80px;
+    height:100%;    
+    color: #33739E;
+}
+.content {
+    display:none;
+    float:right;
+    padding: 10px;
+    width:30%;
+    height:250px;;
+    margin:10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    background-position: center;
+    background-size: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;    
+}
+.content:hover>.content-wrap{
+    display:block;
+    position:absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.content-place{
+    display: none;
+    position:relative;
+    z-index:8;
+    background-color:rgba(255,255,255, 0.9);
+    width:100%;
+    padding: 10px;
+    bottom:-100px;
+    font-size: 8pt;
+    
+    
+}
+.content:hover>.content-place{
+    display: block;
+    
+}
+.content .content-place .content-menu .link{
+    display: inline-block;
+    margin:20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+    
+}
+.pop-close{
+  position: fixed;
+  top:10px;
+  right:15px;
+  color:rgb(255, 255, 255);
+  font-size: 20pt;
+  cursor: pointer;
+  border-radius: 100%;
+  z-index:10;
+}
+.pop{
+    position: fixed;
+    width: 800px;
+    top:10px;
+    bottom:10px;
+    left:18%;
+    margin: auto;
+    z-index: 99;
+}
+.pop::before{
+  content: "";
+  position: fixed;
+  background-color: rgba(53, 52, 52, 0.473);
+  top:0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+}
+/* .swiper-button-white{
+  background-color: rgba(112, 112, 112, 0.664);
+} */
+.wipe{
+  background: whitesmoke;
+}
+.wipe .swiper-container{
+  height: 300px;
+  width: 100%;
+  background: white
+
+}
+.wipe img{
+  width: 100%;
+  /* max-width: 300px; */
+  margin-top:10px;
+
+}
+.board{
+  background: white;
+  padding: 20px;
+}
+
+.link:hover{
+    opacity:0.2;
+}
+.clear{
+    clear: both;
+}
+
+.nav-content{
+    width: 400px;
+    margin: 10px auto;
+}
+.nav-content-err{
+    display: none;
+    width: 400px;
+    margin: 10px auto;
+    padding:10px;
+    margin-bottom:50px;
+    
+}
+.nav-content-err{
+    color: #444;
+    text-align: center;
+    font-size: 14pt;
+}
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    
+}
+.totop a img{
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.281);
+  border-radius: 100%;
+  width:30px;
+  height:30px;
+}
+.totop a {
+    display: none;
+}
+a, a:visited {
+    color: #33739E;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+a:hover {
+    text-decoration: none;
+}
+#loadMore {
+    display: block;
+    width:100%;
+    margin: 20px 0;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius:30px;
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.089);
+    color: #33739E;
+
+    text-align: center;
+    font-size:10pt;
+    font-family: "Poppins";    
+}
+
+
+
+
+  
+  /**
+   * Tooltip Styles
+   */
+  
+  /* Base styles for the element that has a tooltip */
+  [data-tooltip],
+  .tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Base styles for the entire tooltip */
+  [data-tooltip]:before,
+  [data-tooltip]:after,
+  .tooltip:before,
+  .tooltip:after {
+    position: absolute;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: 
+        opacity 0.2s ease-in-out,
+          visibility 0.2s ease-in-out,
+          -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+      -moz-transition:    
+          opacity 0.2s ease-in-out,
+          visibility 0.2s ease-in-out,
+          -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+      transition:         
+          opacity 0.2s ease-in-out,
+          visibility 0.2s ease-in-out,
+          transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform:    translate3d(0, 0, 0);
+    transform:         translate3d(0, 0, 0);
+    pointer-events: none;
+  }
+  
+  /* Show the entire tooltip on hover and focus */
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after,
+  [data-tooltip]:focus:before,
+  [data-tooltip]:focus:after,
+  .tooltip:hover:before,
+  .tooltip:hover:after,
+  .tooltip:focus:before,
+  .tooltip:focus:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  
+  /* Base styles for the tooltip's directional arrow */
+  .tooltip:before,
+  [data-tooltip]:before {
+    z-index: 1001;
+    border: 6px solid transparent;
+    background: transparent;
+    content: "";
+  }
+  
+  /* Base styles for the tooltip's content area */
+  .tooltip:after,
+  [data-tooltip]:after {
+    z-index: 1000;
+    padding: 8px;
+    width: 160px;
+    background-color: #000;
+    /* background-color: hsla(0, 0%, 20%, 0.9); */
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius:8px;
+    text-align:center;
+  }
+  
+  /* Directions */
+  
+  /* Top (default) */
+  [data-tooltip]:before,
+  [data-tooltip]:after,
+  .tooltip:before,
+  .tooltip:after,
+  .tooltip-top:before,
+  .tooltip-top:after {
+    bottom: 100%;
+    left: 50%;
+  }
+  
+  [data-tooltip]:before,
+  .tooltip:before,
+  .tooltip-top:before {
+    margin-left: -6px;
+    margin-bottom: -12px;
+    border-top-color: #000;
+    /* border-top-color: hsla(0, 0%, 20%, 0.9); */
+  }
+  
+  /* Horizontally align top/bottom tooltips */
+  [data-tooltip]:after,
+  .tooltip:after,
+  .tooltip-top:after {
+    margin-left: -80px;
+  }
+  
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after,
+  [data-tooltip]:focus:before,
+  [data-tooltip]:focus:after,
+  .tooltip:hover:before,
+  .tooltip:hover:after,
+  .tooltip:focus:before,
+  .tooltip:focus:after,
+  .tooltip-top:hover:before,
+  .tooltip-top:hover:after,
+  .tooltip-top:focus:before,
+  .tooltip-top:focus:after {
+    -webkit-transform: translateY(-12px);
+    -moz-transform:    translateY(-12px);
+    transform:         translateY(-12px); 
+  }
+  
+  /* Left */
+  .tooltip-left:before,
+  .tooltip-left:after {
+    right: 100%;
+    bottom: 50%;
+    left: auto;
+  }
+  
+  .tooltip-left:before {
+    margin-left: 0;
+    margin-right: -12px;
+    margin-bottom: 0;
+    border-top-color: transparent;
+    border-left-color: #000;
+    /* border-left-color: hsla(0, 0%, 20%, 0.9); */
+  }
+  
+  .tooltip-left:hover:before,
+  .tooltip-left:hover:after,
+  .tooltip-left:focus:before,
+  .tooltip-left:focus:after {
+    -webkit-transform: translateX(-12px);
+    -moz-transform:    translateX(-12px);
+    transform:         translateX(-12px); 
+  }
+  
+  /* Bottom */
+  .tooltip-bottom:before,
+  .tooltip-bottom:after {
+    top: 100%;
+    bottom: auto;
+    left: 50%;
+  }
+  
+  .tooltip-bottom:before {
+    margin-top: -12px;
+    margin-bottom: 0;
+    border-top-color: transparent;
+    border-bottom-color: #000;
+    /* border-bottom-color: hsla(0, 0%, 20%, 0.9); */
+  }
+  
+  .tooltip-bottom:hover:before,
+  .tooltip-bottom:hover:after,
+  .tooltip-bottom:focus:before,
+  .tooltip-bottom:focus:after {
+    -webkit-transform: translateY(12px);
+    -moz-transform:    translateY(12px);
+    transform:         translateY(12px); 
+  }
+  
+  /* Right */
+  .tooltip-right:before,
+  .tooltip-right:after {
+    bottom: 50%;
+    left: 100%;
+  }
+  
+  .tooltip-right:before {
+    margin-bottom: 0;
+    margin-left: -12px;
+    border-top-color: transparent;
+    border-right-color: #000;
+    /* border-right-color: hsla(0, 0%, 20%, 0.9); */
+  }
+  
+  .tooltip-right:hover:before,
+  .tooltip-right:hover:after,
+  .tooltip-right:focus:before,
+  .tooltip-right:focus:after {
+    -webkit-transform: translateX(12px);
+    -moz-transform:    translateX(12px);
+    transform:         translateX(12px); 
+  }
+  
+  /* Move directional arrows down a bit for left/right tooltips */
+  .tooltip-left:before,
+  .tooltip-right:before {
+    top: 3px;
+  }
+  
+  /* Vertically center tooltip content for left/right tooltips */
+  .tooltip-left:after,
+  .tooltip-right:after {
+    margin-left: 0;
+    margin-bottom: -16px;
+  }
